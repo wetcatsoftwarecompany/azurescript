@@ -1,6 +1,6 @@
 [package]
 name = "azure_script"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 description = "A brand new way to write azure infrastructure as code"
 license = "MIT"
@@ -11,3 +11,7 @@ tokio = { version = "1.0", features = ["full"] }
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 thiserror = "1.0"
+
+[package.metadata.docs.rs]
+# Do not build documentation for dependencies
+no-deps = true
