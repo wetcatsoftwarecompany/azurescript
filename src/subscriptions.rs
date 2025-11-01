@@ -55,11 +55,11 @@ pub struct Subscription {
 ///
 /// # Notes
 ///
-/// * This function uses the `reqwest` crate to send an authenticated GET request to the Azure API.
+/// * This function uses the `request` crate to send an authenticated GET request to the Azure API.
 /// * The `api-version` is hardcoded to `2020-01-01`, which is a stable version for listing subscriptions.
 /// * Ensure the provided `access_token` has the necessary permissions to list subscriptions.
 pub async fn list_subscriptions(access_token: &str) -> Result<Vec<Subscription>, AzureError> {
-    let subscriptions_url = "https://management.azure.com/subscriptions?api-version=2020-01-01";
+    let subscriptions_url = "https://management.azure.com/subscriptions?api-version=2025-04-01";
     let client = Client::new();
     let response = client
         .get(subscriptions_url)
@@ -68,6 +68,7 @@ pub async fn list_subscriptions(access_token: &str) -> Result<Vec<Subscription>,
         .await?
         .json::<Value>()
         .await?;
+    println!("Debug: Subscriptions array: {:?}", response);
 
     let subscriptions = response["value"]
         .as_array()
