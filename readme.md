@@ -1,0 +1,1 @@
+This crate is aimed at creating an entire new way to write Azure infrastructure as code. The purpose is to create a more high level and descriptive alternative next to Terraform and Bicep.
