@@ -1,3 +1,5 @@
+//! This module provides an Azure authentication helper.
+
 use reqwest::Client;
 use serde_json::Value;
 use crate::error::AzureError;

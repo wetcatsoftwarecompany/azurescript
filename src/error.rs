@@ -1,3 +1,5 @@
+//! This module provides custom errors.
+
 use thiserror::Error;
 
 #[derive(Error, Debug)]
