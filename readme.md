@@ -109,8 +109,8 @@ AzureScript is licensed under the MIT License.
 
 ### 🔗 Links
 
-GitHub Repository: https://github.com/wetcatsoftwarecompany/azurescript\
-Issues: https://github.com/wetcatsoftwarecompany/azurescript/issues\
+GitHub Repository: https://github.com/wetcatsoftwarecompany/azurescript
+Issues: https://github.com/wetcatsoftwarecompany/azurescript/issues
 Pull Requests: https://github.com/wetcatsoftwarecompany/azurescript/pulls
 
 
