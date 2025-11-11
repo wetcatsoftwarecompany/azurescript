@@ -38,6 +38,6 @@ pub async fn call_azure_api(endpoint: &str, access_token: &str, body: &serde_jso
         .await?
         .json::<serde_json::Value>()
         .await?;
-    println!("API Response: {:?}", response);
+    //println!("API Response: {:?}", response);
     Ok(response)
 }
